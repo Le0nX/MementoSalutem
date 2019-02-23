@@ -38,6 +38,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltm-cx-Cy0">
                                 <rect key="frame" x="32" y="516" width="80" height="80"/>
                                 <state key="normal" image="ic_circle_x"/>
+                                <connections>
+                                    <action selector="handleIncorrect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7vk-7f-XN7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C94-34-bBl">
                                 <rect key="frame" x="62" y="604" width="20" height="39"/>
@@ -48,6 +51,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsp-dd-Qfn">
                                 <rect key="frame" x="263" y="516" width="80" height="80"/>
                                 <state key="normal" image="ic_circle_check"/>
+                                <connections>
+                                    <action selector="handleCorrect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqj-3h-F6H"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmj-1m-K2O">
                                 <rect key="frame" x="293" y="604" width="20" height="39"/>
@@ -57,6 +63,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CC0-UO-OAs" secondAttribute="trailing" id="0Sb-hA-2yj"/>
                             <constraint firstItem="J1z-Ry-hNH" firstAttribute="top" secondItem="kOd-Sn-oQd" secondAttribute="bottom" constant="50" id="7gb-h7-VSC"/>
@@ -83,10 +90,16 @@
                             <outlet property="hintLbl" destination="kOd-Sn-oQd" id="HCH-gX-cVG"/>
                             <outlet property="incorrecCountLbl" destination="C94-34-bBl" id="pKf-kL-HTq"/>
                             <outlet property="promtLbl" destination="CC0-UO-OAs" id="rVT-II-BFr"/>
+                            <outletCollection property="gestureRecognizers" destination="JkJ-kM-BzQ" appends="YES" id="LoQ-AQ-8f2"/>
                         </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JkJ-kM-BzQ">
+                    <connections>
+                        <action selector="toggleAnswerLabels:" destination="BYZ-38-t0r" id="bcc-Ip-Cbm"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
