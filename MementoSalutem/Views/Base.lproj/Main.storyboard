@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Question View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuestionViewController" customModule="MementoSalutem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="QuestionView" customModule="MementoSalutem" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CC0-UO-OAs">
+                                <rect key="frame" x="0.0" y="80" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOd-Sn-oQd">
+                                <rect key="frame" x="0.0" y="148" width="375" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1z-Ry-hNH">
+                                <rect key="frame" x="0.0" y="227" width="375" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltm-cx-Cy0">
+                                <rect key="frame" x="32" y="516" width="80" height="80"/>
+                                <state key="normal" image="ic_circle_x"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C94-34-bBl">
+                                <rect key="frame" x="62" y="604" width="20" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsp-dd-Qfn">
+                                <rect key="frame" x="263" y="516" width="80" height="80"/>
+                                <state key="normal" image="ic_circle_check"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmj-1m-K2O">
+                                <rect key="frame" x="293" y="604" width="20" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.37247859560000002" green="0.84206456220000003" blue="0.23873235719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CC0-UO-OAs" secondAttribute="trailing" id="0Sb-hA-2yj"/>
+                            <constraint firstItem="J1z-Ry-hNH" firstAttribute="top" secondItem="kOd-Sn-oQd" secondAttribute="bottom" constant="50" id="7gb-h7-VSC"/>
+                            <constraint firstItem="C94-34-bBl" firstAttribute="centerX" secondItem="ltm-cx-Cy0" secondAttribute="centerX" id="A6g-SY-C1d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J1z-Ry-hNH" secondAttribute="trailing" id="BdR-3Z-gTA"/>
+                            <constraint firstItem="CC0-UO-OAs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DWV-ms-IjJ"/>
+                            <constraint firstItem="CC0-UO-OAs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="End-QP-ikl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kOd-Sn-oQd" secondAttribute="trailing" id="Fhk-gl-Ybq"/>
+                            <constraint firstItem="jmj-1m-K2O" firstAttribute="top" secondItem="Jsp-dd-Qfn" secondAttribute="bottom" constant="8" id="NIR-Ec-uHj"/>
+                            <constraint firstItem="C94-34-bBl" firstAttribute="top" secondItem="ltm-cx-Cy0" secondAttribute="bottom" constant="8" id="UtB-ok-XY9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jsp-dd-Qfn" secondAttribute="trailing" constant="32" id="fRj-0X-ml1"/>
+                            <constraint firstItem="J1z-Ry-hNH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fav-VP-JJK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C94-34-bBl" secondAttribute="bottom" constant="24" id="mE6-lP-Pru"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jmj-1m-K2O" secondAttribute="bottom" constant="24" id="owu-b2-DQP"/>
+                            <constraint firstItem="jmj-1m-K2O" firstAttribute="centerX" secondItem="Jsp-dd-Qfn" secondAttribute="centerX" id="sVq-4u-X8C"/>
+                            <constraint firstItem="ltm-cx-Cy0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="szw-yG-JMn"/>
+                            <constraint firstItem="kOd-Sn-oQd" firstAttribute="top" secondItem="CC0-UO-OAs" secondAttribute="bottom" constant="8" id="uyd-ca-xfm"/>
+                            <constraint firstItem="kOd-Sn-oQd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x8S-EK-7i0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="answerLbl" destination="J1z-Ry-hNH" id="YRm-Ov-Tvk"/>
+                            <outlet property="correctCountLbl" destination="jmj-1m-K2O" id="GcO-OA-eXk"/>
+                            <outlet property="hintLbl" destination="kOd-Sn-oQd" id="HCH-gX-cVG"/>
+                            <outlet property="incorrecCountLbl" destination="C94-34-bBl" id="pKf-kL-HTq"/>
+                            <outlet property="promtLbl" destination="CC0-UO-OAs" id="rVT-II-BFr"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_circle_check" width="80" height="80"/>
+        <image name="ic_circle_x" width="80" height="80"/>
+    </resources>
+</document>
